@@ -1,0 +1,187 @@
+{
+    "Title": "Through the Solar System",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu) \nand Andrew Byi",
+    "InitialLocation": "Earth", 
+    "NoKey":
+        {
+            "Text": "locked",
+            "Target": "lock"
+        },
+    "GotKey":
+        {
+            "Text": "unlocked",
+            "Target": "Jupiter"
+        },
+    "Key" : false,
+    "Locations": {
+        "radio": {
+            "Body": "Your mission is to go to Neptune to aid the colonization efforts. ",
+            "Choices": [
+                {
+                    "Text": "return",
+                    "Target": "Earth"
+                }
+            ]
+        },
+        "lock": {
+            "Body": "Looks like you don't have any data on the outer solar system. \n You can find an sps (solar positioning system) chip on Mercury",
+            "Choices": [
+                {
+                    "Text": "return",
+                    "Target": "Mars"
+                }
+            ]
+        },
+        "scan": {
+            "Body": "It seems like there is an sps chip on a satilite orbiting Mercury",
+            "Choices": [
+                {
+                    "Text": "return",
+                    "Target": "Mercury"
+                },
+                {
+                    "Text": "obtain the chip",
+                    "Target": "obtain"
+                }
+            ]
+        },
+        "obtain": {
+            "Body": "You snuck onto a satilite orbiting Mercury and take the sps chip. \nYou successfully installed it into your ship. ",
+            "Choices": [
+                {
+                    "Text": "return",
+                    "Target": "Mercury"
+                }
+            ]
+        },
+        "AsteroidBelt": {
+            "Body": " ",
+            "Choices":[
+                {
+                    "Text": "return",
+                    "Target": "Mars"
+                }
+            ]
+        },
+        "Sun": {
+            "Body": "You're near the sun's surface. Due to technological advancements your space ship can withstand the extremeties of the sun",
+            "Choices": [
+                {
+                    "Text": "Go Forward",
+                    "Target": "Venus"
+                }
+            ]
+        },
+        "Mercury": {
+            "Body": "You arrive at Mercury, the closest planet to the sun",
+            "Choices": [
+                {
+                    "Text": "To the Sun",
+                    "Target": "Sun"
+                },
+                {
+                    "Text": "Scan for the sps enchancer chip",
+                    "Target": "scan"
+                },
+                {
+                    "Text": " Go Forward",
+                    "Target": "Venus"
+                }
+            ]
+        },
+        "Venus": {
+            "Body": "You arrive at Venus",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Mercury"
+                },
+                {
+                    "Text": "Go Forward",
+                    "Target": "Earth"
+                }
+            ]
+        },
+        "Earth": {
+            "Body": "You are right above Earth's atmosphere. This is humanities home planet.",
+            
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Venus"
+                },
+                {
+                    "Text": "Radio to base",
+                    "Target": "radio"
+                },
+                {
+                    "Text": "Go Forward",
+                    "Target": "Mars"
+                }
+            ]
+        },
+        "Mars": {
+            "Body": "You arrive at Mars. Its been awhile since humanity colonized this planet.",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Earth"
+                }
+            ]
+        },
+        "Jupiter": {
+            "Body": "You just past the astroid belt and arrived at Jupitor, the biggest planet in the solar system",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Mars"
+                },
+                {
+                    "Text": "Go Forward",
+                    "Target": "Saturn"
+                }
+            ]
+        },
+        "Saturn": {
+            "Body": "You arrive at saturn, it has a huge rings",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Jupiter"
+                },
+                {
+                    "Text": "Go Forward",
+                    "Target": "Uranus"
+                }
+            ]
+        },
+        "Uranus": {
+            "Body": "You arrive at Uranus, this planet spins on its side",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Saturn"
+                },
+                {
+                    "Text": "Go Forward",
+                    "Target": "Neptune"
+                }
+            ]
+        },
+        "Neptune": {
+            "Body": "You made it to Neptune, good job!",
+            "Choices": [
+                
+            ]
+        },
+        "Beyond": {
+            "Body": "Beyond is pluto, pluto is not a planet. Past pluto is the Oort cloud",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Neptune"
+                }
+            ]
+        }
+    }
+}
